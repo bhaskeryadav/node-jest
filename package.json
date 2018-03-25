@@ -1,0 +1,32 @@
+{
+  "name": "node-jest",
+  "version": "1.0.0",
+  "description": "starter project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --exec babel-node --presets es2015,stage-2",
+    "test": "jest test/*.js",
+    "coverage": "jest --collectCoverageFrom=test/**.js --coverage test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaskeryadav/node-jest.git"
+  },
+  "author": "bhaskeryadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhaskeryadav/node-jest/issues"
+  },
+  "homepage": "https://github.com/bhaskeryadav/node-jest#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-jest": "^22.4.3",
+    "babel-preset-stage-2": "^6.24.1",
+    "jest": "^22.4.3",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
